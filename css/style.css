@@ -1,0 +1,51 @@
+/* VARIABLES */
+
+:root {
+    /*colors variables */
+    --input-color: hsla(0, 0%, 51%, 1);
+    --button-color: hsla(28, 87%, 62%, 1);
+    --paragraph-and-h1: hsla(0, 0%, 20%, 1);
+    --h1-color: hsla(160, 2%, 31%, 1);
+
+    /* font family variable */
+    --montserrat-font-family: 'Montserrat', sans-serif;
+
+    /* font weight */
+    --global-font-weight: 600;
+
+    /* font size DESKTOP */
+    --h1-font-size-d: 2.25rem;
+    --h4-and-paragraph-font-size-d: 1.125rem;
+    --input-and-button-font-size-d: 1rem;
+    --label-and-price-font-size-d: 0.75rem;
+    --price-font-size-d: 1rem;
+
+    /* font size MOBILE*/
+    --h1-font-size-m: 1.5rem;
+    --h4-and-paragraph-font-size-m: 0.875rem;
+    --input-and-button-font-size-m: 0.75rem;
+    --label-and-price-font-size-m: 0.625rem;
+    --price-font-size-m: 0.75rem;
+}
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*===================================================*/
+
+/* TITLE PAGE */
+
+.checkout {
+    font-family: var(--montserrat-font-family);
+    font-size: var(--h1-font-size-m);
+    font-weight: var(--global-font-weight);
+    color: var(--h1-color);
+    margin: 2rem 0 1.31rem 1.125rem;
+    transform: rotate(-0.02deg);
+    line-height: 1.813rem;
+}
+
