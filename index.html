@@ -25,12 +25,35 @@
     <main>
         <div class="container">
             <div class="products">
+
                 <div class="products-price">
                     <div class="products-img">
-                        <img src="img/backpack.jpg" alt="backpack">
+                        <img class="products-edit" src="img/green-bag.jpg" alt="backpack">
                     </div>
-                    <p>Vintage Backbag</p>
-                    <p><span>$54.99</span>$94.99</p>
+                    <div class="wrapper">
+                        <p class="backpag">Vintage Backbag</p>
+                        <p><span>$54.99</span><span class="scratched">$94.99</span></p>
+                        <div class="inputValue">
+                            <button onclick="clickSubtraction()">-</button>
+                            <p>1</p>
+                            <button  onclick="clickAddition()">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-price">
+                    <div class="products-img">
+                        <img class="products-edit" src="img/levi-shoes.jpeg" alt="levi-shoes">
+                    </div>
+                    <div class="wrapper">
+                        <p class="backpag">Levi Shoes</p>
+                        <p><span>$54.99</span><span class="scratched">$94.99</span></p>
+                        <div class="inputValue">
+                            <button onclick="clickSubtraction()">-</button>
+                            <p>1</p>
+                            <button  onclick="clickAddition()">+</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
