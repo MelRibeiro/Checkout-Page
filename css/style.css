@@ -7,6 +7,10 @@
     --paragraph-and-h1: hsla(0, 0%, 20%, 1);
     --h1-color: hsla(160, 2%, 31%, 1);
     --background-color: hsla(0, 0%, 95%, 1);
+    --hr-color: hsla(0, 0%, 74%, 1);
+    --form-title-color: hsla(0, 0%, 20%, 1);
+    --label-color: hsla(0, 0%, 31%, 1);
+    --challenge-color: hsla(0, 0%, 74%, 1);
 
 
     /* font family variable */
@@ -37,15 +41,37 @@
     box-sizing: border-box;
 }
 
-body {
+* {
     font-family: var(--montserrat-font-family);
     font-weight: var(--global-font-weight);
+    color: var(--h1-color);
+}
+
+hr {
+    border: none;
+    width: 18.697rem;
+    height: 1px;
+    background-color: var(--hr-color);
+    margin: 0 auto;
+}
+
+::selection {
+    background: var(--input-color);
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    background: var(--input-color);
+    width: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--input-color);
 }
 
 /*===================================================*/
-
 /* TITLE PAGE */
-
 .checkout {
     font-size: var(--h1-font-size-m);
     color: var(--h1-color);
@@ -55,12 +81,16 @@ body {
 }
 
 /*===================================================*/
-
 /* PRODUCTS */
+main p {
+    font-size: var(--h4-and-paragraph-font-size-m);
+    margin-bottom: 0.375rem;
+}
 
 main .products {
     background: var(--background-color);
     border-radius: 0.75rem;
+    margin: 0 0.75rem;
 }
 
 main .products-price {
@@ -79,12 +109,6 @@ main .products-edit {
     transform: rotate(-0.02deg);
     object-fit: cover;
     margin: 2.063rem 1.25rem 1.938rem 1.858rem;
-}
-
-main p {
-    font-size: var(--h4-and-paragraph-font-size-d);
-    color: var(--h1-color);
-    margin-bottom: 0.375rem;
 }
 
 main p span {
@@ -124,4 +148,147 @@ main p span {
     width: 0.438rem;
     height: 1.25rem;
 }
+
+.shipping {
+    display: flex;
+    justify-content: space-around;
+}
+
+.shipping > p {
+    padding: 0.4rem;
+}
+
+/*==========================================*/
+/* USER INFORMATION */
+.contact-inf, .shipping-inf {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.438rem;
+}
+
+h4 {
+    color: var(--form-title-color);
+    font-size: var(--h4-and-paragraph-font-size-m);
+    padding-left: 0.875rem;
+}
+
+label {
+    margin-top: 1.033rem;
+    padding-left: 0.875rem;
+    margin-bottom: 0.327rem;
+    font-size: var(--label-and-price-font-size-m);
+    color: var(--label-color);
+}
+
+input {
+    margin-left: 0.875rem;
+    max-width: 21.828rem;
+    height: 2.535rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--input-color);
+}
+
+input::placeholder {
+    color: var(--input-color);
+}
+
+input:hover {
+    color: var(--form-title-color);
+}
+
+/*===========================================================================*/
+/* ICONS */
+.icon {
+    padding-left: 1.5rem;
+    background-size: 1.2rem;
+}
+
+.email {
+    background: url("../img/icons/email_black_24dp.svg") no-repeat left;
+}
+
+.phone {
+    background: url("../img/icons/phone_black_24dp.svg") no-repeat left;
+}
+
+.name {
+    background: url("../img/icons/account_circle_black_24dp.svg") no-repeat left;
+}
+
+.home {
+    background: url("../img/icons/home_black_24dp.svg") no-repeat left;
+}
+.city {
+    background: url("../img/icons/apartment_black_24dp.svg") no-repeat left;
+}
+
+.country {
+    background: url("../img/icons/public_black_24dp.svg") no-repeat left;
+}
+
+.postal {
+    background: url("../img/icons/markunread_mailbox_black_24dp.svg") no-repeat left;
+}
+/*======================================================================================*/
+
+.row {
+    max-width: 24rem;
+    display: flex;
+}
+
+.row input {
+    max-width: 10.186rem;
+}
+
+.save-inf {
+    margin-top: 1rem;
+}
+
+.checkbox {
+    display: flex;
+    place-items: center;
+}
+
+.checkbox p {
+    margin-left: 0.486rem;
+}
+
+.button {
+    max-width: 23rem;
+    display: flex;
+    justify-content: right;
+}
+
+.button button {
+    border: none;
+    width: 10.375rem;
+    height: 3.375rem;
+    background: var(--button-color);
+    color: #fff;
+    border-radius: 0.75rem;
+    transition: .3s ease all;
+}
+
+.button button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+footer {
+    margin-top: 5.875rem;
+    margin-bottom: 1.5rem;
+}
+
+footer p  {
+    color: var(--challenge-color);
+    text-align: center;
+
+}
+footer a {
+    color: var(--challenge-color);
+}
+
+
+
+
 
