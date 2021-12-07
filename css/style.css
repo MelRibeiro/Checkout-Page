@@ -91,6 +91,9 @@ main .products {
     background: var(--background-color);
     border-radius: 0.75rem;
     margin: 0 0.75rem;
+    max-height: 33.438rem;
+    max-width: 23.938rem;
+
 }
 
 main .products-price {
@@ -286,8 +289,52 @@ footer p  {
 }
 footer a {
     color: var(--challenge-color);
+    transition: .3s ease-in-out all;
 }
 
+a:hover {
+    color: var(--h1-color);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 700px) {
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+    @media screen and (min-width: 750px) {
+    .checkout {
+        font-size: var(--h1-font-size-d);
+        padding-bottom: 3.184rem;
+    }
+
+    main p {
+        font-size: var(--h4-and-paragraph-font-size-d);
+    }
+
+    .checkout, main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .contact-inf {
+        margin-top: 0;
+    }
+
+}
 
 
 
